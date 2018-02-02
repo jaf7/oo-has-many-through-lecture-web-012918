@@ -1,5 +1,6 @@
 require_relative './tweet'
 require_relative './user'
+require_relative './like'
 require 'pry'
 
 coffee_dad = User.new('coffee_dad')

@@ -20,4 +20,8 @@ class User
     Tweet.new(message, self)
   end
 
+  def like_tweet(tweet)
+    Like.new(tweet, self)
+  end
+
 end
