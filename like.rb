@@ -1,5 +1,5 @@
 class Like
-
+  attr_reader :tweet, :user
   ALL = []
 
   def initialize(tweet, user)

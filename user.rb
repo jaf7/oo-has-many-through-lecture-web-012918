@@ -4,6 +4,7 @@ class User
 
   def initialize(username)
     @username = username
+    # @liked_tweets = []
   end
 
   def tweets
@@ -22,6 +23,10 @@ class User
 
   def like_tweet(tweet)
     Like.new(tweet, self)
+  end
+
+  def liked_tweets
+    Like.all.select{|like| like.user == self}.map {|like| like.tweet}
   end
 
 end

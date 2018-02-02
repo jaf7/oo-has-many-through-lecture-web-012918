@@ -30,7 +30,6 @@ student.school
 -[x] Create a Tweet class. A tweet should have a method called `#message` that points to a string and `#user` that points to an instance of the user class. It should have a method called `.all` that returns all the Tweets created.
 -[x] Tweet instances should respond to a message called `#username` that returns the username of the tweet's user.
 -[x] User instances should respond to a method called `#post_tweet` that takes in a message, creates a new tweet and adds it to that user's collection.
-
--[ ] A user should have an instance method called `#like_tweet` that accepts as a tweet instance as a parameter.
--[ ] A user should have a method called `#liked_tweets` that returns a collection of all the tweets this user has liked.
--[ ] A tweet should have a method called `#likers` that returns a collection of all the Users who have liked this tweet.
+-[x] A user should have an instance method called `#like_tweet` that accepts as a tweet instance as a parameter.
+-[x] A user should have a method called `#liked_tweets` that returns a collection of all the tweets this user has liked.
+-[x] A tweet should have a method called `#likers` that returns a collection of all the Users who have liked this tweet.

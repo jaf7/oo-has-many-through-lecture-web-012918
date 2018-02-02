@@ -25,4 +25,8 @@ class Tweet
     self.user.username
   end
 
+  def likers
+    Like.all.select {|like| like.tweet == self}.map{|like| like.user}
+  end
+
 end
